@@ -1316,8 +1316,8 @@ body {
   }
 }
 .container * {
-  -webkit-animation-play-state: paused !important;
-          animation-play-state: paused !important;
+  -webkit-animation-play-state: start !important;
+          animation-play-state: start !important;
 }/*# sourceMappingURL=main.css.map */
 
 /* ... */
