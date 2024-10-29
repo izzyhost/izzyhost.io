@@ -103,3 +103,35 @@ body{
         transform: translateY(100vh);
     }
 }
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+    min-height: 100vh; /* Ensures full viewport height */
+}
+
+.falling-star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    top: -10px;
+    animation: fall linear forwards;
+    /* Optional enhancements */
+    box-shadow: 0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 15px #fff; /* Creates a glowing effect */
+    border-radius: 50%; /* Makes star more rounded */
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(100vh) rotate(960deg);
+        opacity: 0;
+    }
+}
